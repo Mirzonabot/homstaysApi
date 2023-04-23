@@ -28,6 +28,7 @@ public class Homestay {
     private String district;
     private String city;
     private String street;
+    private String homestayPhoneNumber;
 
 
     @Override

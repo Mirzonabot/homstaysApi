@@ -23,6 +23,7 @@ public class Booking {
     private String homestayName;
     private String userID;
     private String ownerID;
+    private String phoneNumberBooker;
     @Builder.Default
     private boolean booked = false;
     @Builder.Default
