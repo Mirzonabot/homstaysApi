@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar target/ApiUpdatedApplication-0.0.1-SNAPSHOT.jar
+web: java -Dserver.port=$PORT -jar target/api_updated-0.0.1-SNAPSHOT.jar
