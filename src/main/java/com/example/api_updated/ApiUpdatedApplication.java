@@ -16,7 +16,7 @@ import java.io.IOException;
 public class ApiUpdatedApplication {
 
     public static void main(String[] args) throws IOException {
-        ClassLoader classLoader = HomestaybookingApplication.class.getClassLoader();
+        ClassLoader classLoader = ApiUpdatedApplication.class.getClassLoader();
         File file = new File(classLoader.getResource("google-services.json").getFile());
         assert file.exists();
         FileInputStream serviceAccount =
