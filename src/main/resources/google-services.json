@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "homestaybooking-f8308",
+  "private_key_id": "9741a4ffa6ffa5253b89bcd3b245e353709b5486",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDpVi+SQvz8Nmtb\nQvu3IAbgsobG/7bm4IBvcYc4YNFm+2lvHVe14eHFduLTDF+FaaC2nPSgTkl9PLGD\nJh7iNWM2x7uwlVDpvcn1l5Nu5PEV3KGtEGtyBSjwDXtDRfvuWdS4JYyAatykghWk\nL/C4zD7bXjGH7u7PTrzgZ1qJVz3JeTDe31jwkBnwITTvsJHN15NgtL33lrkNSuLF\ngXKiFuAET4wgP2zKVZmPpa8aoIoqRcjuL04zDBY/TEwneHuiSVhgayy5Ke6sBZdh\nx/TUW8nLel+gJ4+LBMuSAfEntNUbRyVTOvuvdbkzdnN7GfwlWDeQ1yFJ4lPw1L/M\n/i73JHldAgMBAAECggEAA5uxJrRt8SLLrYCjAlz2sLmCAVc64ANTGldMHqaQUD1m\nBSyAVJn0F/8HSjSRgbk1YpToN6T/f//Z1/DpFPajEsYNrRED3/KqBSza54RcQKLK\nqMVok1GGamtC8zJnClYD9/Up6sTBL9qCpgHRKHiNTanMGoLSO7SCQx3taYQzHSBP\nkaDOCaxFbWn/rl8Zf758wRsDR0FzpA3kNxgcTPHQcZTzrd0kJr6+DYnSBMsrC+BH\nS7IpLuCNT4ZhbPHPP44bLwfQWJOTehJN+BobSdGkzlnjSnVsPNGUWfYb1m4cEPQf\nbsCvk+zY72T1yXmw6eBHiwlCkc26gLxURkWRpyOXgQKBgQD650fz7M/xk3T1KlYK\nthtjnbGAzeDss0cekwQmj3Z2ZqYxa3RZFYi0CBiQutCLdwRphtaqSSHyxxnErkfI\n+22EIDPmiG1xZ1D5ZSG6/0LFW7K/hypPkrgjBuwaXQEH6RXbzEdTgt5hQq8SciMi\nXE2DKoJjaAVdN1iHNSEY5uwcHQKBgQDuE45Yn3vemhXTTtuJb1D0UR2Wk7p86grZ\nXxb/YdlRFKq3c11BkuZdL4URvoDhlyS06xpGv+cUSKiWgkrzHG1Ak3EJSmpM1kX7\nxHQrQhinyeSSUhLT2bi96tWSVakTiCEKxofiWmZ9PIoayX8zR4phVAIfHGwdoqqh\nbf/KWDrOQQKBgC0hJKQPWGfPah4e+1L55ntIhgDxByAMLyKktv5ol5o8ZHBHL6pG\nYUxgmGqP76rmQXjps/r1JJISleP2pRrVfqFhWXSB3Y2kU8BIHIUSHOR61e/1U/r0\nHQLP3+/uAp11o2ThnYK761v7LppWxVMM3zRUlRdkQnK93cKUH9vmzVlRAoGBAKfT\nw1m3+4MdTdtq0JnejcvczqXSN/lMpx86yCR5Xs+oaPvvaEMMgjYYhI7Qo1vjxy1+\nOkS7jPMgkS+gY6NjW6TVCy8IdUz7E9R6VYYVDvpg+S8oijsrVO8Udz+0AP9SzDAj\nabDoFy2bmqNtfayxdtxLcz9pMtHlVLF9sH58md/BAoGACtIYemxHNqVVUg5iSnxo\nAqksSJNoFtidWHgTt1L9P7yj0sc0Wz9jpEL06vB9VBKN/2l2TMpw5nC7MyR71JMW\nnkGEW1ya5tGoHO0a1ZIjJyzxw5frVIK1PbUdejqUOFEWzXpsGdigTtq7T9KWu5gg\nJ1nFWJLqeEbqwKtKz2D1zsc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-6vdx9@homestaybooking-f8308.iam.gserviceaccount.com",
+  "client_id": "118170926727144126344",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-6vdx9%40homestaybooking-f8308.iam.gserviceaccount.com"
+}
