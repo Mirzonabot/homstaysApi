@@ -17,27 +17,27 @@ public class ApiUpdatedApplication {
 
     public static void main(String[] args) throws IOException {
 //        try {
-        ClassLoader classLoader = ApiUpdatedApplication.class.getClassLoader();
-
-        File file = new File(classLoader.getResource("Google-services.json").getFile());
-        assert file.exists();
-        FileInputStream serviceAccount = null;
-        try {
-            System.out.println("File found");
-            System.out.println("absolute path: " + file.getAbsolutePath());
-            System.out.println("canonical path: " + file.getCanonicalPath());
-            System.out.println("path: " + file.getPath());
-
-
-            serviceAccount = new FileInputStream(file.getCanonicalPath());
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found 1111");
-        }
-        FirebaseOptions options = new FirebaseOptions.Builder()
-                .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                .setDatabaseUrl("https://homestaybooking-f8308-default-rtdb.europe-west1.firebasedatabase.app")
-                .build();
-        FirebaseApp.initializeApp(options);
+//        ClassLoader classLoader = ApiUpdatedApplication.class.getClassLoader();
+//
+//        File file = new File(classLoader.getResource("Google-services.json").getFile());
+//        assert file.exists();
+//        FileInputStream serviceAccount = null;
+//        try {
+//            System.out.println("File found");
+//            System.out.println("absolute path: " + file.getAbsolutePath());
+//            System.out.println("canonical path: " + file.getCanonicalPath());
+//            System.out.println("path: " + file.getPath());
+//
+//
+//            serviceAccount = new FileInputStream(file.getCanonicalPath());
+//        } catch (FileNotFoundException e) {
+//            System.out.println("File not found 1111");
+//        }
+//        FirebaseOptions options = new FirebaseOptions.Builder()
+//                .setCredentials(GoogleCredentials.fromStream(serviceAccount))
+//                .setDatabaseUrl("https://homestaybooking-f8308-default-rtdb.europe-west1.firebasedatabase.app")
+//                .build();
+//        FirebaseApp.initializeApp(options);
         SpringApplication.run(ApiUpdatedApplication.class, args);
 
     }
