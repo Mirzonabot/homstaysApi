@@ -19,7 +19,7 @@ public class ApiUpdatedApplication {
 //        try {
         ClassLoader classLoader = ApiUpdatedApplication.class.getClassLoader();
 
-        File file = new File(classLoader.getResource("static/google-services.json").getFile());
+        File file = new File(classLoader.getResource("Google-services.json").getFile());
         assert file.exists();
         FileInputStream serviceAccount = null;
         try {
