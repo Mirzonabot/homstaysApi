@@ -32,7 +32,7 @@ public class ApiUpdatedApplication {
             FirebaseApp.initializeApp(options);
             SpringApplication.run(ApiUpdatedApplication.class, args);
         } catch (FileNotFoundException e) {
-            System.out.println("File not found");
+            System.out.println("File not found 1111");
         }
     }
 
