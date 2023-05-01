@@ -18,9 +18,10 @@ public class ApiUpdatedApplication {
     public static void main(String[] args) throws IOException {
 //        try {
         ClassLoader classLoader = ApiUpdatedApplication.class.getClassLoader();
-        try {
+
             File file = new File(classLoader.getResource("google-services.json").getFile());
             assert file.exists();
+        try {
             FileInputStream serviceAccount =
                     new FileInputStream(file.getAbsolutePath());
 
