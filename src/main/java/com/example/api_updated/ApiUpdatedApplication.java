@@ -23,6 +23,8 @@ public class ApiUpdatedApplication {
         assert file.exists();
         FileInputStream serviceAccount = null;
         try {
+            System.out.println("File found");
+            System.out.println("absolute path: " + file.getAbsolutePath());
             serviceAccount = new FileInputStream(file.getAbsolutePath());
         } catch (FileNotFoundException e) {
             System.out.println("File not found 1111");
