@@ -16,18 +16,22 @@ import java.io.IOException;
 public class ApiUpdatedApplication {
 
     public static void main(String[] args) throws IOException {
-        ClassLoader classLoader = ApiUpdatedApplication.class.getClassLoader();
-        File file = new File(classLoader.getResource("google-services.json").getFile());
-        assert file.exists();
-        FileInputStream serviceAccount =
-                new FileInputStream(file.getAbsolutePath());
+        try {
+            ClassLoader classLoader = ApiUpdatedApplication.class.getClassLoader();
+            File file = new File(classLoader.getResource("google-services.json").getFile());
+            assert file.exists();
+            FileInputStream serviceAccount =
+                    new FileInputStream(file.getAbsolutePath());
 
-        FirebaseOptions options = new FirebaseOptions.Builder()
-                .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                .setDatabaseUrl("https://homestaybooking-f8308-default-rtdb.europe-west1.firebasedatabase.app")
-                .build();
-        FirebaseApp.initializeApp(options);
-        SpringApplication.run(ApiUpdatedApplication.class, args);
+            FirebaseOptions options = new FirebaseOptions.Builder()
+                    .setCredentials(GoogleCredentials.fromStream(serviceAccount))
+                    .setDatabaseUrl("https://homestaybooking-f8308-default-rtdb.europe-west1.firebasedatabase.app")
+                    .build();
+            FirebaseApp.initializeApp(options);
+            SpringApplication.run(ApiUpdatedApplication.class, args);
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found");
+        }
     }
 
 }
