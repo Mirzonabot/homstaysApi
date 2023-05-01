@@ -29,10 +29,13 @@ public class EmployeeController {
         return "testing";
     }
 
-    @PostMapping("/sms-receiver")
-    public ResponseEntity smsReceiver(@RequestBody String sms) {
+    @GetMapping("/sms-receiver")
+    public ResponseEntity smsReceiver(){
+        System.out.println("_____________________________");
         System.out.println("sms receiver");
-        return ResponseEntity.ok("sms receiver");
+        System.out.println("_____________________________");
+
+        return ResponseEntity.ok("SMS sent");
     }
 
 
