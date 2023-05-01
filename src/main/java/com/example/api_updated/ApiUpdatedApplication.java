@@ -25,7 +25,7 @@ public class ApiUpdatedApplication {
         try {
             System.out.println("File found");
             System.out.println("absolute path: " + file.getAbsolutePath());
-            serviceAccount = new FileInputStream(file.getAbsolutePath());
+            serviceAccount = new FileInputStream(file.getPath());
         } catch (FileNotFoundException e) {
             System.out.println("File not found 1111");
         }
