@@ -19,12 +19,11 @@ public class ApiUpdatedApplication {
 //        try {
         ClassLoader classLoader = ApiUpdatedApplication.class.getClassLoader();
 
-        File file = new File(classLoader.getResource("google-services.json").getFile());
+        File file = new File(classLoader.getResource("static/google-services.json").getFile());
         assert file.exists();
         FileInputStream serviceAccount = null;
         try {
-            serviceAccount =
-                    new FileInputStream(file.getAbsolutePath());
+            serviceAccount = new FileInputStream(file.getAbsolutePath());
         } catch (FileNotFoundException e) {
             System.out.println("File not found 1111");
         }
