@@ -30,7 +30,8 @@ public class EmployeeController {
     }
 
     @GetMapping("/sms-receiver")
-    public ResponseEntity smsReceiver(){
+    public ResponseEntity smsReceiver(@RequestBody Object request ){
+        System.out.println(request);
         System.out.println("_____________________________");
         System.out.println("sms receiver");
         System.out.println("_____________________________");
