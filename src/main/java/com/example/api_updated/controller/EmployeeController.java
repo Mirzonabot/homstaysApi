@@ -5,11 +5,17 @@ import com.example.api_updated.Booking;
 import com.example.api_updated.CRUDHomestayService;
 import com.example.api_updated.Homestay;
 import com.example.api_updated.SendSMS;
+import com.twilio.twiml.MessagingResponse;
+import com.twilio.twiml.messaging.Body;
+
+import com.twilio.twiml.messaging.Message;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
+import java.util.Enumeration;
 import java.util.List;
 
 @RestController
@@ -37,6 +43,36 @@ public class EmployeeController {
 
         return ResponseEntity.ok("SMS sent");
     }
+
+//
+//    @PostMapping(path = "/sms")
+//    public String handleIncomingSms(RequestBody request) {
+//
+//        System.out.println("sms");
+//        System.out.println("_____________________________");
+//        System.out.println(request);
+//        System.out.println("_____________________________");
+////        Enumeration<String> parameterNames = request.getParameterNames();
+////        System.out.println("_____________________________");
+////        System.out.println("_____________________________");
+////        System.out.println(request.getParameter("Body"));
+////        System.out.println("_____________________________");
+////        System.out.println(request.getParameter("From"));
+////        System.out.println("_____________________________");
+////        System.out.println(request.getParameter("To"));
+////        while (parameterNames.hasMoreElements()) {
+////            String paramName = parameterNames.nextElement();
+////            System.out.println(paramName);
+////            System.out.println("_____________________________");
+////            System.out.println(request.getParameter(paramName));
+////            System.out.println("_____________________________");
+////        }
+//
+//
+//
+//        // Return the response as an XML string
+//        return "thank you";
+//    }
 
 
     @GetMapping("/get-all-homestays")
