@@ -5,11 +5,7 @@ import com.example.api_updated.Booking;
 import com.example.api_updated.CRUDHomestayService;
 import com.example.api_updated.Homestay;
 import com.example.api_updated.SendSMS;
-import com.twilio.twiml.MessagingResponse;
-import com.twilio.twiml.messaging.Body;
 
-import com.twilio.twiml.messaging.Message;
-import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
