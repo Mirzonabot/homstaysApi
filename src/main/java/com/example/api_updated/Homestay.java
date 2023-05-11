@@ -48,4 +48,20 @@ public class Homestay {
                     ", street='" + street + '\'' +
                 '}';
     }
+
+    public String toString2() {
+        return id + ',' +
+                    homestayName + ',' +
+                    homestayCapacity + ','+
+                    ownerId + ',' +
+                    address + ',' +
+                    latitude + ',' +
+                    longitude + ',' +
+                    availability + ',' +
+                    village + ',' +
+                    district + ',' +
+                    city + ',' +
+                    street + ',' +
+                    homestayPhoneNumber;
+    }
 }

@@ -32,7 +32,7 @@ public class EmployeeController {
     }
 
     @PostMapping(path = "/sms-receiver", consumes = "application/x-www-form-urlencoded;charset=UTF-8")
-    public ResponseEntity smsReceiver(@RequestParam("From") String from,@RequestParam("Body") String body) {
+    public ResponseEntity smsReceiver(@RequestParam("From") String from,@RequestParam("Body") String body, @RequestParam("To") String to) {
 
         System.out.println();
         System.out.println("_____________________________");
@@ -42,6 +42,8 @@ public class EmployeeController {
         System.out.println(from);
         System.out.println("_____________________________");
         System.out.println(body);
+        System.out.println("_____________________________");
+        System.out.println(to);
 
         return ResponseEntity.ok("SMS sent");
     }
