@@ -31,14 +31,17 @@ public class EmployeeController {
         return "testing";
     }
 
-    @PostMapping("/sms-receiver")
-    public ResponseEntity smsReceiver(@RequestBody Object request) {
+    @PostMapping(path = "/sms-receiver", consumes = "application/x-www-form-urlencoded;charset=UTF-8")
+    public ResponseEntity smsReceiver(@RequestParam String param1, @RequestParam String param2) {
 
         System.out.println();
         System.out.println("_____________________________");
         System.out.println("sms receiver");
         System.out.println("_____________________________");
-        System.out.println(request);
+//        System.out.println(request);
+        System.out.println(param1);
+        System.out.println("_____________________________");
+        System.out.println(param2);
 
         return ResponseEntity.ok("SMS sent");
     }
