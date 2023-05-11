@@ -17,6 +17,7 @@ public class SMSParser {
         String result = "";
 
         if (messageArray[0].equals("ghfs")){
+            System.out.println("in ghfs if statement");
             result = parseAllHometays();
         }
 
@@ -25,6 +26,7 @@ public class SMSParser {
     }
 
     public static String parseAllHometays() {
+        System.out.println("in parseAllHometays");
         List<Homestay> homestays = crudService.getHomestays();
         String result = "h:";
         for (Homestay homestay : homestays) {
