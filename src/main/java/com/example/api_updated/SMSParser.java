@@ -30,6 +30,11 @@ public class SMSParser {
         for (Homestay homestay : homestays) {
             result += homestay.toString2() + "\n";
         }
+        System.out.println("______________________");
+        System.out.println("______________________");
+        System.out.println("result: " + result);
+        System.out.println("______________________");
+        System.out.println("______________________");
         return result;
     }
 
