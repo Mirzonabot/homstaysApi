@@ -38,9 +38,9 @@ public class EmployeeController {
         System.out.println("sms receiver");
         System.out.println("_____________________________");
 //        System.out.println(request);
-        System.out.println(from);
+        System.out.println("from: " + from);
         System.out.println("_____________________________");
-        System.out.println(body);
+        System.out.println("body: " + body);
         System.out.println("_____________________________");
         System.out.println(to);
         String result = SMSParser.parse(body);

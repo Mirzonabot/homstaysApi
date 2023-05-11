@@ -16,7 +16,7 @@ public class SMSParser {
 
         String result = "";
 
-        if (messageArray[0].equals("ghfs")){
+        if (messageArray[0].equals("ghfc")){
             System.out.println("in ghfs if statement");
             result = parseAllHometays();
         }
