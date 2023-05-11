@@ -31,6 +31,9 @@ public class SMSParser {
         String result = "h:";
         for (Homestay homestay : homestays) {
             result += homestay.toString2() + "\n";
+            if (result.length() > 1500) {
+                break;
+            }
         }
         System.out.println("______________________");
         System.out.println("______________________");
