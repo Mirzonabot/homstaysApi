@@ -10,6 +10,7 @@ public class SMSParser {
         // split the message into array by :
 
         String[] messageArray = message.split(":");
+        System.out.println(messageArray.toString());
 
         String result = "";
 
