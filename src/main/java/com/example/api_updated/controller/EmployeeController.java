@@ -45,6 +45,8 @@ public class EmployeeController {
         System.out.println(to);
         String result = SMSParser.parse(body);
 
+        SendSMS.sendSms(from, result);
+
         return ResponseEntity.ok(result);
     }
 

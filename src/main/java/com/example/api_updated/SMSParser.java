@@ -10,6 +10,8 @@ public class SMSParser {
         // split the message into array by :
 
         String[] messageArray = message.split(":");
+        System.out.println("message1:"+messageArray[0]);
+        System.out.println("message2:"+messageArray[1]);
         System.out.println(messageArray.toString());
 
         String result = "";
@@ -24,7 +26,7 @@ public class SMSParser {
 
     public static String parseAllHometays() {
         List<Homestay> homestays = crudService.getHomestays();
-        String result = "";
+        String result = "h:";
         for (Homestay homestay : homestays) {
             result += homestay.toString2() + "\n";
         }
