@@ -1,10 +1,8 @@
 package com.example.api_updated.controller;
 
 
-import com.example.api_updated.Booking;
-import com.example.api_updated.CRUDHomestayService;
-import com.example.api_updated.Homestay;
-import com.example.api_updated.SendSMS;
+import com.example.api_updated.*;
+
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -13,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.List;
+
 
 @RestController
 @Controller
@@ -44,8 +43,9 @@ public class EmployeeController {
         System.out.println(body);
         System.out.println("_____________________________");
         System.out.println(to);
+        String result = SMSParser.parse(body);
 
-        return ResponseEntity.ok("SMS sent");
+        return ResponseEntity.ok(result);
     }
 
 //
