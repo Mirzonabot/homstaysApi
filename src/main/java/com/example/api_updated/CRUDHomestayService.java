@@ -22,6 +22,19 @@ public class CRUDHomestayService {
         return updateList(homestayDatabaseReference, Homestay.class);
     }
 
+    public List<Homestay> getHomestaysInTheDistanceOf(String latitude, String longitude, String distance) {
+        List<Homestay> homestays = getHomestays();
+        List<Homestay> result = new ArrayList<>();
+        for (Homestay homestay : homestays) {
+            if (DistanceBetweenLocations.distance(Double.parseDouble(latitude), Double.parseDouble(longitude), Double.parseDouble(homestay.getLatitude()), Double.parseDouble(homestay.getLongitude()),'K') <= Double.parseDouble(distance)) {
+                result.add(homestay);
+
+
+            }
+        }
+        return result;
+    }
+
 
     public List<Homestay> getHomestayById(String homestayId) {
 
